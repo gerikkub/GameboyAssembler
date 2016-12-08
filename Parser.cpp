@@ -73,9 +73,9 @@ const ParameterLookup paramLookupTable[] = {
     {"$l", PARAMETER_L},
     {"$a", PARAMETER_A},
     {"$bc", PARAMETER_BC},
-    {"$de", PARAMETER_BC},
-    {"$hl", PARAMETER_BC},
-    {"$sp", PARAMETER_BC},
+    {"$de", PARAMETER_DE},
+    {"$hl", PARAMETER_HL},
+    {"$sp", PARAMETER_SP},
     {"c", PARAMETER_FLAG_C},
     {"z", PARAMETER_FLAG_Z},
     {"nc", PARAMETER_FLAG_NC},
@@ -83,12 +83,12 @@ const ParameterLookup paramLookupTable[] = {
 };
 
 const ParameterLookup addrParamLookupTable[] = {
-    {"($C)", PARAMETER_ADDR_C},
-    {"($BC)", PARAMETER_ADDR_BC},
-    {"($DE)", PARAMETER_ADDR_DE},
-    {"($HL)", PARAMETER_ADDR_HL},
-    {"($HL+)", PARAMETER_ADDR_HLP},
-    {"($HL-)", PARAMETER_ADDR_HLM}
+    {"($c)", PARAMETER_ADDR_C},
+    {"($bc)", PARAMETER_ADDR_BC},
+    {"($de)", PARAMETER_ADDR_DE},
+    {"($hl)", PARAMETER_ADDR_HL},
+    {"($hl+)", PARAMETER_ADDR_HLP},
+    {"($hl-)", PARAMETER_ADDR_HLM}
 };
     
 

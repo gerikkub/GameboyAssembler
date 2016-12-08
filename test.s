@@ -1,12 +1,10 @@
 
 .load
 
-_start:
-add $b, $c
-ld ($hl),$c
-loop:
-jp loop
-bla
-daa
-
+nop 
+stop
+ld $bc,$sp+44
+stop
+nop
+halt
 

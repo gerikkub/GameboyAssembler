@@ -4,6 +4,7 @@
 
 #include "config.h"
 #include "asm.h"
+#include "Instruction.h"
 #include "Parser.h"
 
 void printUsage()
@@ -16,6 +17,7 @@ int main(int argc, char** argv)
     char lineBuffer[MAX_LINE_LENGTH];
     std::ifstream inputFile;
     ParsedLine_t pLine;
+    int currentLine = 1;
 
     if (argc < 2)
     {
@@ -26,6 +28,8 @@ int main(int argc, char** argv)
 
     while (inputFile.good())
     {
+        Instruction* currInst;
+
         inputFile.getline(lineBuffer, MAX_LINE_LENGTH);
         pLine = parseLine(lineBuffer);
 
@@ -36,7 +40,19 @@ int main(int argc, char** argv)
                 break;
 
             case TYPE_INSTRUCTION:
-                std::cout << "Found Instruction" << std::endl;
+                currInst = createInstruction(pLine.data.inst.opcode,
+                                             pLine.data.inst.p[0],
+                                             pLine.data.inst.p[1],
+                                             pLine.data.inst.label);
+
+                if (currInst == NULL)
+                {
+                    std::cout << "Unknown instruction on line " << currentLine << std::endl;
+                } else if (!currInst->isValid())
+                {
+                    std::cout << "Invalid parameters for instruction on line " << currentLine << std::endl;
+                }
+
                 break;
 
             case TYPE_LABEL:
@@ -51,7 +67,11 @@ int main(int argc, char** argv)
                 std::cout << "Found Error!" << std::endl;
                 break;
         }
+
+        currentLine++;
     }
+
+
 
     return 0;
 }

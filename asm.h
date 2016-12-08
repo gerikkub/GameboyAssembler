@@ -31,7 +31,7 @@ typedef enum {
 } Parameter;
 
 typedef enum {
-    INST_NOT_FOUND,
+    INST_NOT_FOUND = 0,
     INST_NOP,
     INST_HALT,
     INST_STOP,
@@ -81,5 +81,10 @@ typedef enum {
 bool paramIsReg(Parameter p);
 bool paramIsReg16(Parameter p);
 bool paramIsFlag(Parameter p);
+
+// Parameter needs to be defined before Instruction
+#include "Instruction.h"
+
+Instruction* createInstruction(InstructionName inst, Parameter p1, Parameter p2, char* imm);
 
 #endif

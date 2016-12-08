@@ -1,5 +1,6 @@
 
 #include "asm.h"
+#include "Instruction.h"
 
 bool paramIsReg(Parameter p)
 {
@@ -54,4 +55,34 @@ bool paramIsFlag(Parameter p)
 
     return false;
 }
+
+Instruction* createInstruction(InstructionName inst, Parameter p1, Parameter p2, char* imm)
+{
+    Instruction* instObj = NULL;
+
+    switch (inst)
+    {
+        case INST_NOP:
+            instObj = new Nop(p1, p2, imm);
+            break;
+
+        case INST_HALT:
+            instObj = new Halt(p1, p2, imm);
+            break;
+
+        case INST_STOP:
+            instObj = new Stop(p1, p2, imm);
+            break;
+
+        case INST_LOAD:
+            instObj = new Load(p1, p2, imm);
+            break;
+
+        default:
+            break;
+    }
+
+    return instObj;
+}
+
 

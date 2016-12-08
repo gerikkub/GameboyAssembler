@@ -1,0 +1,204 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+BUILDDIR	Makefile	/^BUILDDIR = build$/;"	m
+CPPFLAGS	Makefile	/^CPPFLAGS = -g $(WARNINGS)$/;"	m
+DIR_INVALID	Parser.h	/^    DIR_INVALID,$/;"	e	enum:__anon7
+DIR_LOCATION	Parser.h	/^    DIR_LOCATION$/;"	e	enum:__anon7
+DirectiveInfo_t	Parser.h	/^} DirectiveInfo_t;$/;"	t	typeref:struct:__anon9
+DirectiveType	Parser.h	/^} DirectiveType;$/;"	t	typeref:enum:__anon7
+ERROR_INVALID_DIRECTIVE	Parser.h	/^    ERROR_INVALID_DIRECTIVE$/;"	e	enum:__anon5
+ERROR_INVALID_INST	Parser.h	/^    ERROR_INVALID_INST,$/;"	e	enum:__anon5
+ERROR_INVALID_PARAMETER	Parser.h	/^    ERROR_INVALID_PARAMETER,$/;"	e	enum:__anon5
+ErrorType	Parser.h	/^} ErrorType;$/;"	t	typeref:enum:__anon5
+Halt	Instruction.h	/^class Halt : public Instruction {$/;"	c
+INST_ADC	asm.h	/^    INST_ADC,$/;"	e	enum:__anon2
+INST_ADD	asm.h	/^    INST_ADD,$/;"	e	enum:__anon2
+INST_AND	asm.h	/^    INST_AND,$/;"	e	enum:__anon2
+INST_BIT	asm.h	/^    INST_BIT,$/;"	e	enum:__anon2
+INST_CALL	asm.h	/^    INST_CALL,$/;"	e	enum:__anon2
+INST_CCF	asm.h	/^    INST_CCF,$/;"	e	enum:__anon2
+INST_CP	asm.h	/^    INST_CP,$/;"	e	enum:__anon2
+INST_CPL	asm.h	/^    INST_CPL,$/;"	e	enum:__anon2
+INST_DAA	asm.h	/^    INST_DAA,$/;"	e	enum:__anon2
+INST_DEC	asm.h	/^    INST_DEC,$/;"	e	enum:__anon2
+INST_DI	asm.h	/^    INST_DI,$/;"	e	enum:__anon2
+INST_EI	asm.h	/^    INST_EI,$/;"	e	enum:__anon2
+INST_HALT	asm.h	/^    INST_HALT,$/;"	e	enum:__anon2
+INST_INC	asm.h	/^    INST_INC,$/;"	e	enum:__anon2
+INST_JP	asm.h	/^    INST_JP,$/;"	e	enum:__anon2
+INST_JR	asm.h	/^    INST_JR,$/;"	e	enum:__anon2
+INST_LOAD	asm.h	/^    INST_LOAD,$/;"	e	enum:__anon2
+INST_LOADH	asm.h	/^    INST_LOADH,$/;"	e	enum:__anon2
+INST_NOP	asm.h	/^    INST_NOP,$/;"	e	enum:__anon2
+INST_NOT_FOUND	asm.h	/^    INST_NOT_FOUND = 0,$/;"	e	enum:__anon2
+INST_OR	asm.h	/^    INST_OR,$/;"	e	enum:__anon2
+INST_POP	asm.h	/^    INST_POP,$/;"	e	enum:__anon2
+INST_PUSH	asm.h	/^    INST_PUSH,$/;"	e	enum:__anon2
+INST_RES	asm.h	/^    INST_RES,$/;"	e	enum:__anon2
+INST_RET	asm.h	/^    INST_RET,$/;"	e	enum:__anon2
+INST_RETI	asm.h	/^    INST_RETI,$/;"	e	enum:__anon2
+INST_RL	asm.h	/^    INST_RL,$/;"	e	enum:__anon2
+INST_RLA	asm.h	/^    INST_RLA,$/;"	e	enum:__anon2
+INST_RLC	asm.h	/^    INST_RLC,$/;"	e	enum:__anon2
+INST_RLCA	asm.h	/^    INST_RLCA,$/;"	e	enum:__anon2
+INST_RR	asm.h	/^    INST_RR,$/;"	e	enum:__anon2
+INST_RRA	asm.h	/^    INST_RRA,$/;"	e	enum:__anon2
+INST_RRC	asm.h	/^    INST_RRC,$/;"	e	enum:__anon2
+INST_RRCA	asm.h	/^    INST_RRCA,$/;"	e	enum:__anon2
+INST_RST	asm.h	/^    INST_RST,$/;"	e	enum:__anon2
+INST_SBC	asm.h	/^    INST_SBC,$/;"	e	enum:__anon2
+INST_SCF	asm.h	/^    INST_SCF,$/;"	e	enum:__anon2
+INST_SET	asm.h	/^    INST_SET$/;"	e	enum:__anon2
+INST_SLA	asm.h	/^    INST_SLA,$/;"	e	enum:__anon2
+INST_SRA	asm.h	/^    INST_SRA,$/;"	e	enum:__anon2
+INST_SRL	asm.h	/^    INST_SRL,$/;"	e	enum:__anon2
+INST_STOP	asm.h	/^    INST_STOP,$/;"	e	enum:__anon2
+INST_SUB	asm.h	/^    INST_SUB,$/;"	e	enum:__anon2
+INST_SWAP	asm.h	/^    INST_SWAP,$/;"	e	enum:__anon2
+INST_XOR	asm.h	/^    INST_XOR,$/;"	e	enum:__anon2
+Instruction	Instruction.cpp	/^Instruction::Instruction(Parameter p1, Parameter p2, char* imm)$/;"	f	class:Instruction
+Instruction	Instruction.h	/^class Instruction {$/;"	c
+InstructionInfo_t	Parser.h	/^} InstructionInfo_t;$/;"	t	typeref:struct:__anon8
+InstructionLookup	Parser.cpp	/^} InstructionLookup;$/;"	t	typeref:struct:__anon3	file:
+InstructionName	asm.h	/^} InstructionName;$/;"	t	typeref:enum:__anon2
+LDFLAGS	Makefile	/^LDFLAGS = $/;"	m
+LineType	Parser.h	/^} LineType;$/;"	t	typeref:enum:__anon6
+Load	Instruction.h	/^class Load : public Instruction {$/;"	c
+MAX_DIRECTIVE_LENGTH	config.h	/^#define MAX_DIRECTIVE_LENGTH /;"	d
+MAX_DIRECTIVE_PARAM_LENGTH	config.h	/^#define MAX_DIRECTIVE_PARAM_LENGTH /;"	d
+MAX_INST_LENGTH	config.h	/^#define MAX_INST_LENGTH /;"	d
+MAX_LABEL_LENGTH	config.h	/^#define MAX_LABEL_LENGTH /;"	d
+MAX_LINE_LENGTH	config.h	/^#define MAX_LINE_LENGTH /;"	d
+MAX_PARAM_LENGTH	config.h	/^#define MAX_PARAM_LENGTH /;"	d
+Nop	Instruction.h	/^class Nop : public Instruction {$/;"	c
+OBJECTS	Makefile	/^OBJECTS = $(addprefix $(BUILDDIR)\/, $(addsuffix .o, $(basename $(SOURCES))))$/;"	m
+PARAMETER_A	asm.h	/^    PARAMETER_A,$/;"	e	enum:__anon1
+PARAMETER_ADDR_BC	asm.h	/^    PARAMETER_ADDR_BC,$/;"	e	enum:__anon1
+PARAMETER_ADDR_C	asm.h	/^    PARAMETER_ADDR_C,$/;"	e	enum:__anon1
+PARAMETER_ADDR_DE	asm.h	/^    PARAMETER_ADDR_DE,$/;"	e	enum:__anon1
+PARAMETER_ADDR_HL	asm.h	/^    PARAMETER_ADDR_HL,$/;"	e	enum:__anon1
+PARAMETER_ADDR_HLM	asm.h	/^    PARAMETER_ADDR_HLM,$/;"	e	enum:__anon1
+PARAMETER_ADDR_HLP	asm.h	/^    PARAMETER_ADDR_HLP,$/;"	e	enum:__anon1
+PARAMETER_ADDR_IMM	asm.h	/^    PARAMETER_ADDR_IMM,$/;"	e	enum:__anon1
+PARAMETER_B	asm.h	/^    PARAMETER_B,$/;"	e	enum:__anon1
+PARAMETER_BC	asm.h	/^    PARAMETER_BC,$/;"	e	enum:__anon1
+PARAMETER_C	asm.h	/^    PARAMETER_C,$/;"	e	enum:__anon1
+PARAMETER_D	asm.h	/^    PARAMETER_D,$/;"	e	enum:__anon1
+PARAMETER_DE	asm.h	/^    PARAMETER_DE,$/;"	e	enum:__anon1
+PARAMETER_E	asm.h	/^    PARAMETER_E,$/;"	e	enum:__anon1
+PARAMETER_FLAG_C	asm.h	/^    PARAMETER_FLAG_C,$/;"	e	enum:__anon1
+PARAMETER_FLAG_NC	asm.h	/^    PARAMETER_FLAG_NC,$/;"	e	enum:__anon1
+PARAMETER_FLAG_NZ	asm.h	/^    PARAMETER_FLAG_NZ,$/;"	e	enum:__anon1
+PARAMETER_FLAG_Z	asm.h	/^    PARAMETER_FLAG_Z,$/;"	e	enum:__anon1
+PARAMETER_H	asm.h	/^    PARAMETER_H,$/;"	e	enum:__anon1
+PARAMETER_HL	asm.h	/^    PARAMETER_HL,$/;"	e	enum:__anon1
+PARAMETER_IMM	asm.h	/^    PARAMETER_IMM,$/;"	e	enum:__anon1
+PARAMETER_INVALID	asm.h	/^    PARAMETER_INVALID,$/;"	e	enum:__anon1
+PARAMETER_L	asm.h	/^    PARAMETER_L,$/;"	e	enum:__anon1
+PARAMETER_NONE	asm.h	/^    PARAMETER_NONE = 0,$/;"	e	enum:__anon1
+PARAMETER_SP	asm.h	/^    PARAMETER_SP,$/;"	e	enum:__anon1
+PARAMETER_SP_IMM	asm.h	/^    PARAMETER_SP_IMM,$/;"	e	enum:__anon1
+Parameter	asm.h	/^} Parameter;$/;"	t	typeref:enum:__anon1
+ParameterLookup	Parser.cpp	/^} ParameterLookup;$/;"	t	typeref:struct:__anon4	file:
+ParsedLine_t	Parser.h	/^} ParsedLine_t;$/;"	t	typeref:struct:__anon10
+SOURCES	Makefile	/^SOURCES = main.cpp \\$/;"	m
+Stop	Instruction.h	/^class Stop : public Instruction {$/;"	c
+TARGET	Makefile	/^TARGET = gbasm$/;"	m
+TYPE_COMMENT	Parser.h	/^    TYPE_COMMENT,$/;"	e	enum:__anon6
+TYPE_DIRECTIVE	Parser.h	/^    TYPE_DIRECTIVE,$/;"	e	enum:__anon6
+TYPE_EMPTY	Parser.h	/^    TYPE_EMPTY,$/;"	e	enum:__anon6
+TYPE_ERROR	Parser.h	/^    TYPE_ERROR$/;"	e	enum:__anon6
+TYPE_INSTRUCTION	Parser.h	/^    TYPE_INSTRUCTION,$/;"	e	enum:__anon6
+TYPE_LABEL	Parser.h	/^    TYPE_LABEL,$/;"	e	enum:__anon6
+WARNINGS	Makefile	/^WARNINGS = -Wall -Werror -Wno-unused-function$/;"	m
+__ASM_H__	asm.h	/^#define __ASM_H__$/;"	d
+__CONFIG_H__	config.h	/^#define __CONFIG_H__$/;"	d
+__INSTRUCTION_H__	Instruction.h	/^#define __INSTRUCTION_H__$/;"	d
+__LOAD_H__	Load.h	/^#define __LOAD_H__$/;"	d
+__PARSER_H__	Parser.h	/^#define __PARSER_H__$/;"	d
+_start	test.s	/^_start:$/;"	l
+adc	test.s	/^adc$/;"	l
+add	test.s	/^add$/;"	l
+addrParamLookupTable	Parser.cpp	/^const ParameterLookup addrParamLookupTable[] = {$/;"	v
+and	test.s	/^and$/;"	l
+bit	test.s	/^bit$/;"	l
+call	test.s	/^call$/;"	l
+ccf	test.s	/^ccf$/;"	l
+cp	test.s	/^cp$/;"	l
+cpl	test.s	/^cpl$/;"	l
+createInstruction	asm.cpp	/^Instruction* createInstruction(InstructionName inst, Parameter p1, Parameter p2, char* imm)$/;"	f
+daa	test.s	/^daa$/;"	l
+data	Parser.h	/^    } data;$/;"	m	struct:__anon10	typeref:union:__anon10::__anon11
+dec	test.s	/^dec$/;"	l
+di	test.s	/^di$/;"	l
+dir	Parser.h	/^    DirectiveType dir;$/;"	m	struct:__anon9
+directive	Parser.h	/^        DirectiveInfo_t directive;$/;"	m	union:__anon10::__anon11
+ei	test.s	/^ei$/;"	l
+error	Parser.h	/^        ErrorType error;$/;"	m	union:__anon10::__anon11
+getInstructionName	Parser.cpp	/^static InstructionName getInstructionName(char* inst)$/;"	f	file:
+halt	test.s	/^halt$/;"	l
+imm	Instruction.h	/^        char imm[MAX_LABEL_LENGTH];$/;"	m	class:Instruction
+inc	test.s	/^inc$/;"	l
+inst	Parser.h	/^        InstructionInfo_t inst;$/;"	m	union:__anon10::__anon11
+instLookupTable	Parser.cpp	/^const InstructionLookup instLookupTable[] = {$/;"	v
+isValid	Halt.cpp	/^bool Halt::isValid()$/;"	f	class:Halt
+isValid	Load.cpp	/^bool Load::isValid()$/;"	f	class:Load
+isValid	Nop.cpp	/^bool Nop::isValid()$/;"	f	class:Nop
+isValid	Stop.cpp	/^bool Stop::isValid()$/;"	f	class:Stop
+jp	test.s	/^jp$/;"	l
+jr	test.s	/^jr$/;"	l
+label	Parser.h	/^        char label[MAX_LABEL_LENGTH];$/;"	m	union:__anon10::__anon11
+label	Parser.h	/^    char label[MAX_LABEL_LENGTH];$/;"	m	struct:__anon8
+ld	test.s	/^ld$/;"	l
+ldh	test.s	/^ldh$/;"	l
+main	main.cpp	/^int main(int argc, char** argv)$/;"	f
+name	Parser.cpp	/^    InstructionName name;$/;"	m	struct:__anon3	file:
+nop	test.s	/^nop$/;"	l
+opcode	Parser.h	/^    InstructionName opcode;$/;"	m	struct:__anon8
+or	test.s	/^or$/;"	l
+p	Parser.h	/^    Parameter p[2];$/;"	m	struct:__anon8
+param	Parser.cpp	/^    Parameter param;$/;"	m	struct:__anon4	file:
+param	Parser.h	/^    char param[MAX_DIRECTIVE_PARAM_LENGTH];$/;"	m	struct:__anon9
+paramIsFlag	asm.cpp	/^bool paramIsFlag(Parameter p)$/;"	f
+paramIsReg	asm.cpp	/^bool paramIsReg(Parameter p)$/;"	f
+paramIsReg16	asm.cpp	/^bool paramIsReg16(Parameter p)$/;"	f
+paramLookupTable	Parser.cpp	/^const ParameterLookup paramLookupTable[] = {$/;"	v
+params	Instruction.h	/^        Parameter params[2];$/;"	m	class:Instruction
+parseDirective	Parser.cpp	/^static DirectiveType parseDirective(char* dirStr)$/;"	f	file:
+parseLine	Parser.cpp	/^ParsedLine_t parseLine(char* lineChars)$/;"	f
+parseParameter	Parser.cpp	/^static Parameter parseParameter(char* paramStr)$/;"	f	file:
+pop	test.s	/^pop$/;"	l
+printUsage	main.cpp	/^void printUsage()$/;"	f
+push	test.s	/^push$/;"	l
+res	test.s	/^res$/;"	l
+ret	test.s	/^ret$/;"	l
+reti	test.s	/^reti$/;"	l
+rl	test.s	/^rl$/;"	l
+rla	test.s	/^rla$/;"	l
+rlc	test.s	/^rlc$/;"	l
+rlca	test.s	/^rlca$/;"	l
+rr	test.s	/^rr$/;"	l
+rra	test.s	/^rra$/;"	l
+rrc	test.s	/^rrc$/;"	l
+rrca	test.s	/^rrca$/;"	l
+rst	test.s	/^rst$/;"	l
+sbc	test.s	/^sbc$/;"	l
+scf	test.s	/^scf$/;"	l
+sla	test.s	/^sla$/;"	l
+sra	test.s	/^sra$/;"	l
+srl	test.s	/^srl$/;"	l
+stop	test.s	/^stop$/;"	l
+str	Parser.cpp	/^    char str[MAX_INST_LENGTH];$/;"	m	struct:__anon3	file:
+str	Parser.cpp	/^    char str[MAX_PARAM_LENGTH];$/;"	m	struct:__anon4	file:
+sub	test.s	/^sub$/;"	l
+swap	test.s	/^swap$/;"	l
+type	Parser.h	/^    LineType type;$/;"	m	struct:__anon10
+writeMachineCode	Halt.cpp	/^bool Halt::writeMachineCode(std::ofstream& outStream)$/;"	f	class:Halt
+writeMachineCode	Load.cpp	/^bool Load::writeMachineCode(std::ofstream& outStream)$/;"	f	class:Load
+writeMachineCode	Nop.cpp	/^bool Nop::writeMachineCode(std::ofstream& outStream)$/;"	f	class:Nop
+writeMachineCode	Stop.cpp	/^bool Stop::writeMachineCode(std::ofstream& outStream)$/;"	f	class:Stop
+xor	test.s	/^xor$/;"	l

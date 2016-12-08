@@ -1,0 +1,15 @@
+#ifndef __CONFIG_H__
+#define __CONFIG_H__
+
+#define MAX_INST_LENGTH 5
+
+#define MAX_LABEL_LENGTH 64
+
+#define MAX_DIRECTIVE_LENGTH 64
+#define MAX_DIRECTIVE_PARAM_LENGTH 64
+#define MAX_PARAM_LENGTH 8
+
+#define MAX_LINE_LENGTH 512
+
+
+#endif

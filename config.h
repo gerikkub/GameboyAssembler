@@ -11,5 +11,7 @@
 
 #define MAX_LINE_LENGTH 512
 
+#define MAX_NUM_LABELS 2048
+
 
 #endif

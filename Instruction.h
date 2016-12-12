@@ -13,7 +13,7 @@ class Instruction {
 
         virtual bool isValid() = 0;
 
-        virtual bool writeMachineCode(std::ofstream& outStream) = 0;
+        virtual bool writeMachineCode(char* data, int offset) = 0;
 
         virtual int size() = 0;
 
@@ -29,7 +29,7 @@ class Nop : public Instruction {
             : Instruction(p1, p2, imm) { }
 
         bool isValid();
-        bool writeMachineCode(std::ofstream& outStream);
+        bool writeMachineCode(char* data, int offset);
         int size();
 };
 
@@ -39,7 +39,7 @@ class Halt : public Instruction {
             : Instruction(p1, p2, imm) { }
 
         bool isValid();
-        bool writeMachineCode(std::ofstream& outStream);
+        bool writeMachineCode(char* data, int offset);
         int size();
 };
 
@@ -49,7 +49,7 @@ class Stop : public Instruction {
             : Instruction(p1, p2, imm) { }
 
         bool isValid();
-        bool writeMachineCode(std::ofstream& outStream);
+        bool writeMachineCode(char* data, int offset);
         int size();
 };
 
@@ -59,7 +59,7 @@ class Load : public Instruction {
             : Instruction(p1, p2, imm) { }
 
         bool isValid();
-        bool writeMachineCode(std::ofstream& outStream);
+        bool writeMachineCode(char* data, int offset);
         int size();
 };
 

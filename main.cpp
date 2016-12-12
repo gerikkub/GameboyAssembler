@@ -1,11 +1,13 @@
 
 #include <iostream>
 #include <fstream>
+#include <set>
 
 #include "config.h"
 #include "asm.h"
 #include "Instruction.h"
 #include "Parser.h"
+#include "Label.h"
 
 void printUsage()
 {
@@ -18,6 +20,7 @@ int main(int argc, char** argv)
     std::ifstream inputFile;
     ParsedLine_t pLine;
     int currentLine = 1;
+    int currentAddress = 0;
 
     if (argc < 2)
     {
@@ -25,6 +28,8 @@ int main(int argc, char** argv)
     }
 
     inputFile.open(argv[1], std::ifstream::in);
+
+    initInstructionSet();
 
     while (inputFile.good())
     {
@@ -48,15 +53,26 @@ int main(int argc, char** argv)
                 if (currInst == NULL)
                 {
                     std::cout << "Unknown instruction on line " << currentLine << std::endl;
+                    exit(1);
+
                 } else if (!currInst->isValid())
                 {
                     std::cout << "Invalid parameters for instruction on line " << currentLine << std::endl;
+                    exit(1);
+                } else {
+
+                    addInstructionToSet(currInst, currentAddress);
+
+                    currentAddress += currInst->size();
                 }
 
                 break;
 
             case TYPE_LABEL:
                 std::cout << "Found Label" << std::endl;
+
+                addLabelToList(pLine.data.label, currentAddress);
+
                 break;
 
             case TYPE_DIRECTIVE:
@@ -71,7 +87,17 @@ int main(int argc, char** argv)
         currentLine++;
     }
 
+    std::set<InstructionEntry_t>::iterator iter = getInstructionSetIterator();
 
+    std::ofstream ofs;
+
+    while (iter != getInstructionSetEnd())
+    {
+        InstructionEntry_t entry = *iter;
+        entry.inst->writeMachineCode(ofs);
+
+        iter++;
+    }
 
     return 0;
 }

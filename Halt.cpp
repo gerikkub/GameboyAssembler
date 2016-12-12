@@ -11,7 +11,7 @@ bool Halt::isValid()
            params[1] == PARAMETER_NONE;
 }
 
-bool Halt::writeMachineCode(std::ofstream& outStream)
+bool Halt::writeMachineCode(char* data, int offset)
 {
     std::cout << "Writing Halt Inst" << std::endl;
     return true;

@@ -1,10 +1,14 @@
 
 .load
 
+_start:
 nop 
 stop
-ld $bc,$sp+44
+ld $b, $d
 stop
+ld $a, 8
+ld $b, _start
 nop
 halt
+nop
 

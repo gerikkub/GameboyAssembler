@@ -1,6 +1,8 @@
 #ifndef __ASM_H__
 #define __ASM_H__
 
+#include <set>
+
 typedef enum {
     PARAMETER_NONE = 0,
     PARAMETER_INVALID,
@@ -78,12 +80,23 @@ typedef enum {
     INST_SET
 } InstructionName;
 
+void initInstructionSet();
+
 bool paramIsReg(Parameter p);
 bool paramIsReg16(Parameter p);
 bool paramIsFlag(Parameter p);
 
 // Parameter needs to be defined before Instruction
 #include "Instruction.h"
+
+typedef struct {
+    Instruction* inst;
+    int offset;
+}  InstructionEntry_t;
+
+bool addInstructionToSet(Instruction* inst, int offset);
+std::set<InstructionEntry_t>::iterator getInstructionSetIterator();
+std::set<InstructionEntry_t>::iterator getInstructionSetEnd();
 
 Instruction* createInstruction(InstructionName inst, Parameter p1, Parameter p2, char* imm);
 

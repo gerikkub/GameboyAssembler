@@ -12,9 +12,9 @@ bool Nop::isValid()
         params[1] == PARAMETER_NONE);
 }
 
-bool Nop::writeMachineCode(std::ofstream& outStream)
+bool Nop::writeMachineCode(char* data, int offset)
 {
-    std::cout << "Writing Nop Inst";
+    std::cout << "Writing Nop Inst" << std::endl;
 
     return true;
 }

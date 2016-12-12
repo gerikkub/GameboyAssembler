@@ -11,7 +11,7 @@ bool Stop::isValid()
            params[1] == PARAMETER_NONE;
 }
 
-bool Stop::writeMachineCode(std::ofstream& outStream)
+bool Stop::writeMachineCode(char* data, int offset)
 {
     std::cout << "Writing Stop Inst" << std::endl;
     return true;

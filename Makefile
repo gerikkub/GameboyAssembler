@@ -5,6 +5,7 @@ BUILDDIR = build
 SOURCES = main.cpp \
 		  asm.cpp \
 		  Parser.cpp \
+		  Label.cpp \
 		  Nop.cpp \
 		  Halt.cpp \
 		  Stop.cpp \
